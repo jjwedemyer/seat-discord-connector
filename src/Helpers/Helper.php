@@ -111,6 +111,8 @@ class Helper
                                      ->select('discord_role_id')
                     )->union(
                         DiscordRolePublic::select('discord_role_id')
+                    )->intersect(
+                        DB::table('warlof_discord_connector_roles_blacklist')->select('discord_role_id')
                     )->get();
 
         $channels = $rows->unique('discord_role_id')->pluck('discord_role_id')->toArray();
