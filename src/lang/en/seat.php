@@ -30,4 +30,6 @@ return [
     'public_filter' => 'Public Filter',
     'discord_role' => 'Discord Role',
     'join'      => 'Join Server',
+    'quick_create_blacklist' => 'Quick blacklist role',
+    'blacklist' => 'Blacklist'
 ];

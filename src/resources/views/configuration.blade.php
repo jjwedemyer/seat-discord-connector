@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    @include('discord-connector::blacklist-creation')
+    @include('discord-connector::blacklist.blacklist-creation')
 @stop
 
 @section('right')
